@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananta Shahane</title>
+  <!-- Load Tailwind CSS from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a href="#skills" class="mr-5 hover:text-gray-900">Skills</a>
+        <a href="#experience" class="mr-5 hover:text-gray-900">Experience</a>
+        <a href="#education" class="mr-5 hover:text-gray-900">Education</a>
+        <a href="#about" class="hover:text-gray-900">About</a>
+      </nav>
+      <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+        <svg fill="#008cb4" width="40px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg>
+        <span class="ml-3 text-xl">Ananta Shahane</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <a href="#contacts">
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contacts
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+    </a>
+      </div>
+    </div>
+  </header>
+  <!--Hero-->
+    <div class="bg-fixed bg-cover", style="background-image: url(hero-bg.jpg)">
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-full" alt="hero" src="2054.jpg">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Ananta Shahane</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                <p class="mb-8 leading-relaxed">I'm a passionate computer science Master's student at Leiden University with a keen interest in exploring
+                    diverse topics in the field, ranging from Quantum Computing to Evolutionary Algorithms. My primary area of expertise lies in Evolutionary 
+                    Algorithms, and I'm constantly seeking opportunities to expand my knowledge and apply my skills. If you're looking for a motivated individual 
+                    to work on Vehicle Routing Problem or optimizing MPSoCs projects, please don't hesitate to contact me. I'm eager to learn and contribute to 
+                    exciting projects.</p>
+            </div>
+            </div>
+        </section>
+    </div>
+    <!--Skills-->
+    <section class="text-gray-600 body-font" id="skills">
+        <div class="container px-5 py-24 mx-auto">
+            <p class="text-gray-900 text-lg title-font text-4xl mb-2">Skills</p>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
+                <svg width="64px" height="64px" viewBox="0 -1 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#008cb4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>swift [#146]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-380.000000, -7520.000000)" fill="#008cb4"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M336.322,7360 C345.113,7366.02452 342.27,7372.66771 342.27,7372.66771 C342.27,7372.66771 344.77,7375.5122 343.759,7378 C343.759,7378 342.728,7376.25784 340.999,7376.25784 C339.332,7376.25784 338.353,7378 334.999,7378 C327.531,7378 324,7371.71249 324,7371.71249 C330.728,7376.1732 335.322,7373.01433 335.322,7373.01433 C332.291,7371.24093 325.843,7362.75985 325.843,7362.75985 C331.458,7367.57725 333.885,7368.84785 333.885,7368.84785 C332.437,7367.64073 328.374,7361.74216 328.374,7361.74216 C331.624,7365.05923 338.082,7369.68719 338.082,7369.68719 C339.916,7364.56549 336.322,7360 336.322,7360" id="swift-[#146]"> </path> </g> </g> </g> </g></svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Languages</h2>
+              <p class="leading-relaxed text-base">
+                Swift | Python | C | C++ | Golang | Shell
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Operating Systems</h2>
+              <p class="leading-relaxed text-base">macOS | Fedora (Linux) | Windows</p>
+            </div>
+            <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
+                <svg width="64px" height="64px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#008cb4" stroke="#008cb4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#008cb4" d="M83.014 30.53c-14.8 0-26.118 5.868-33.96 17.6-7.782 11.675-11.673 28.656-11.673 50.942 0 22.228 3.892 39.207 11.675 50.94 7.84 11.674 19.16 17.51 33.96 17.51 14.797 0 26.09-5.836 33.872-17.51 7.84-11.733 11.76-28.712 11.76-50.94 0-22.286-3.92-39.267-11.76-50.94-7.783-11.734-19.075-17.6-33.873-17.6zm230.648 0c-14.8 0-26.12 5.868-33.96 17.6-7.783 11.675-11.675 28.656-11.675 50.942 0 22.228 3.892 39.207 11.674 50.94 7.843 11.674 19.163 17.51 33.962 17.51 14.8 0 26.09-5.836 33.87-17.51 7.843-11.733 11.765-28.712 11.765-50.94 0-22.286-3.922-39.267-11.764-50.94-7.782-11.734-19.072-17.6-33.87-17.6zm115.324 0c-14.798 0-26.12 5.868-33.96 17.6-7.783 11.675-11.674 28.656-11.674 50.942 0 22.228 3.89 39.207 11.673 50.94 7.842 11.674 19.163 17.51 33.96 17.51 14.8 0 26.09-5.836 33.872-17.51 7.842-11.733 11.762-28.712 11.762-50.94 0-22.286-3.92-39.267-11.763-50.94-7.782-11.734-19.072-17.6-33.87-17.6zm-236.75 2.39l-31.572 6.367V55.56l31.748-6.367v100.73H163.23v15.036h76.055v-15.036H210.1V32.92h-17.864zM83.014 44.682c9.256 0 16.184 4.54 20.783 13.62 4.658 9.02 6.986 22.61 6.986 40.77 0 18.1-2.328 31.69-6.986 40.77-4.6 9.02-11.527 13.53-20.783 13.53-9.198 0-16.124-4.51-20.782-13.53-4.598-9.08-6.898-22.67-6.898-40.77 0-18.16 2.3-31.75 6.898-40.77 4.658-9.08 11.584-13.62 20.782-13.62zm230.648 0c9.257 0 16.185 4.54 20.783 13.62 4.658 9.02 6.987 22.61 6.987 40.77 0 18.1-2.33 31.69-6.987 40.77-4.598 9.02-11.526 13.53-20.783 13.53-9.197 0-16.125-4.51-20.783-13.53-4.6-9.08-6.9-22.67-6.9-40.77 0-18.16 2.3-31.75 6.9-40.77 4.657-9.08 11.585-13.62 20.782-13.62zm115.324 0c9.257 0 16.185 4.54 20.784 13.62 4.657 9.02 6.986 22.61 6.986 40.77 0 18.1-2.33 31.69-6.986 40.77-4.6 9.02-11.527 13.53-20.784 13.53-9.197 0-16.125-4.51-20.783-13.53-4.6-9.08-6.898-22.67-6.898-40.77 0-18.16 2.3-31.75 6.898-40.77 4.658-9.08 11.586-13.62 20.783-13.62zM83.014 187.504c-14.8 0-26.118 5.867-33.96 17.6-7.782 11.673-11.673 28.654-11.673 50.94 0 22.228 3.892 39.208 11.675 50.94 7.84 11.674 19.16 17.512 33.96 17.512 14.797 0 26.09-5.838 33.872-17.512 7.84-11.732 11.76-28.712 11.76-50.94 0-22.286-3.92-39.267-11.76-50.94-7.783-11.733-19.075-17.6-33.873-17.6zm115.324 0c-14.8 0-26.12 5.867-33.96 17.6-7.784 11.673-11.675 28.654-11.675 50.94 0 22.228 3.89 39.208 11.674 50.94 7.84 11.674 19.162 17.512 33.96 17.512 14.8 0 26.09-5.838 33.874-17.512 7.842-11.732 11.763-28.712 11.763-50.94 0-22.286-3.92-39.267-11.762-50.94-7.782-11.733-19.073-17.6-33.872-17.6zm109.223 2.39l-31.574 6.366v16.273l31.75-6.37v100.733h-29.183v15.036h76.056v-15.036h-29.186V189.893H307.56zm115.323 0l-31.572 6.366v16.273l31.75-6.37v100.733h-29.185v15.036h76.057v-15.036h-29.184V189.893h-17.865zm-339.87 11.76c9.257 0 16.185 4.54 20.784 13.62 4.658 9.02 6.986 22.612 6.986 40.77 0 18.1-2.328 31.69-6.986 40.77-4.6 9.02-11.527 13.532-20.783 13.532-9.198 0-16.124-4.51-20.782-13.532-4.598-9.08-6.898-22.67-6.898-40.77 0-18.158 2.3-31.75 6.898-40.77 4.658-9.08 11.584-13.62 20.782-13.62zm115.325 0c9.256 0 16.184 4.54 20.783 13.62 4.66 9.02 6.987 22.612 6.987 40.77 0 18.1-2.328 31.69-6.986 40.77-4.598 9.02-11.526 13.532-20.782 13.532-9.198 0-16.126-4.51-20.783-13.532-4.6-9.08-6.9-22.67-6.9-40.77 0-18.158 2.3-31.75 6.9-40.77 4.657-9.08 11.585-13.62 20.783-13.62zm0 142.823c-14.8 0-26.12 5.866-33.96 17.6-7.784 11.673-11.675 28.652-11.675 50.94 0 22.226 3.89 39.207 11.674 50.94 7.84 11.674 19.162 17.512 33.96 17.512 14.8 0 26.09-5.84 33.874-17.513 7.842-11.733 11.763-28.714 11.763-50.94 0-22.288-3.92-39.267-11.762-50.94-7.782-11.734-19.073-17.6-33.872-17.6zm115.324 0c-14.8 0-26.12 5.866-33.96 17.6-7.783 11.673-11.675 28.652-11.675 50.94 0 22.226 3.892 39.207 11.674 50.94 7.843 11.674 19.163 17.512 33.962 17.512 14.8 0 26.09-5.84 33.87-17.513 7.843-11.733 11.765-28.714 11.765-50.94 0-22.288-3.922-39.267-11.764-50.94-7.782-11.734-19.072-17.6-33.87-17.6zm-236.75 2.388l-31.572 6.367v16.272l31.75-6.367V463.87H47.904V478.9h76.057V463.87H94.778V346.864H76.912zm345.97 0l-31.57 6.367v16.272l31.75-6.367V463.87h-29.187V478.9h76.057V463.87h-29.184V346.864h-17.865zM198.34 358.627c9.256 0 16.184 4.54 20.783 13.62 4.66 9.02 6.987 22.61 6.987 40.77 0 18.1-2.328 31.69-6.986 40.77-4.598 9.02-11.526 13.53-20.782 13.53-9.198 0-16.126-4.51-20.783-13.53-4.6-9.08-6.9-22.67-6.9-40.77 0-18.16 2.3-31.75 6.9-40.77 4.657-9.08 11.585-13.62 20.783-13.62zm115.324 0c9.257 0 16.185 4.54 20.783 13.62 4.658 9.02 6.987 22.61 6.987 40.77 0 18.1-2.33 31.69-6.987 40.77-4.598 9.02-11.526 13.53-20.783 13.53-9.197 0-16.125-4.51-20.783-13.53-4.6-9.08-6.9-22.67-6.9-40.77 0-18.16 2.3-31.75 6.9-40.77 4.657-9.08 11.585-13.62 20.782-13.62z"></path></g></svg>
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
+              <svg fill="#008cb4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 453.95 453.949" xml:space="preserve" stroke="#008cb4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M69.289,297.898c-0.067-1.006-0.114-2.018-0.114-3.041c0-17.941,10.56-33.459,25.787-40.682 c-3.004-2.688-5.87-5.471-8.549-8.369c-1.8-1.949-4.3-3.102-6.95-3.205c-2.653-0.11-5.233,0.848-7.181,2.647l-22.031,20.362 c-4.056,3.748-4.305,10.074-0.556,14.131C55.658,286.197,62.221,292.252,69.289,297.898z"></path> <path d="M440.749,442.098l-19.668-46.439l1.819-1.115c4.708-2.891,6.183-9.047,3.293-13.754l-47.877-78.023 c9.521-6.986,18.228-14.674,25.94-23.021c3.749-4.056,3.5-10.383-0.557-14.131l-22.03-20.362c-1.948-1.8-4.541-2.754-7.182-2.648 c-2.649,0.104-5.149,1.258-6.95,3.205c-4.665,5.049-9.845,9.783-15.465,14.188l-59.22-96.51 c7.663-12.071,12.122-26.364,12.122-41.687c0-29.627-16.605-55.445-40.996-68.646c5.846-5.626,9.495-13.52,9.495-22.254 c0-17.038-13.861-30.9-30.899-30.9h-31.2c-17.038,0-30.899,13.862-30.899,30.9c0,8.734,3.649,16.628,9.495,22.254 c-24.391,13.201-40.996,39.019-40.996,68.646c0,15.323,4.459,29.617,12.123,41.685l-53.28,86.832 c2.078-0.295,4.199-0.459,6.357-0.459c20.942,0,38.59,14.383,43.585,33.789l52.559-85.654c5.37,1.173,10.939,1.809,16.656,1.809 s11.286-0.636,16.656-1.809l55.065,89.74c-21.988,7.173-46.383,11.043-71.722,11.043c-24.001,0-47.152-3.477-68.215-9.939 c0.265,1.973,0.415,3.979,0.415,6.023c0,16.746-9.203,31.375-22.81,39.123c27.961,9.595,58.797,14.793,90.61,14.793 c34.789,0,68.42-6.199,98.388-17.586l49.69,80.98c1.387,2.26,3.616,3.877,6.194,4.494c0.77,0.186,1.551,0.275,2.328,0.275 c1.832,0,3.645-0.504,5.23-1.477l2.841-1.744l32.747,38.471c0.98,1.152,2.386,1.76,3.811,1.76c0.9,0,1.81-0.242,2.624-0.744 l7.94-4.9C440.872,447.006,441.711,444.371,440.749,442.098z M226.975,169.8c-26.467,0-48-21.532-48-48 c0-21.229,13.859-39.272,33-45.587V104.8c0,8.284,6.716,15,15,15s15-6.716,15-15V76.213c19.141,6.314,33,24.357,33,45.587 C274.975,148.268,253.442,169.8,226.975,169.8z"></path> <path d="M71.586,309.359l-43.83,71.43c-2.888,4.705-1.414,10.863,3.293,13.752l1.82,1.117l-19.668,46.439 c-0.963,2.271-0.123,4.908,1.978,6.205l7.941,4.9c0.814,0.502,1.722,0.744,2.624,0.744c1.424,0,2.83-0.605,3.81-1.76 l32.747-38.471l2.842,1.744c1.586,0.973,3.399,1.477,5.23,1.477c0.778,0,1.559-0.092,2.328-0.275 c2.579-0.617,4.808-2.234,6.195-4.494l45.031-73.388c-3.143,0.696-6.403,1.077-9.753,1.077 C94.436,339.857,77.637,327.077,71.586,309.359z"></path> <circle cx="113.824" cy="294.857" r="24"></circle> </g> </g> </g></svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Fundamentals</h2>
+              <p class="leading-relaxed text-base">Data Structures | Machine Learning | Quantum Computing | Evolutionary Algorithms | Software Testing | Modern Game AI 
+                | Embedded Systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Experience-->
+      <section class="text-gray-600 body-font overflow-hidden" id="experience">
+        <div class="container px-5 py-24 mx-auto">
+            <p class="text-gray-900 text-lg title-font text-4xl mb-2 pb-4">Experience</p>
+            <div class="-my-8 divide-y-2 divide-gray-100">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                    <span class="font-semibold title-font text-gray-700">Masters Thesis</span>
+                    <span class="mt-1 text-gray-500 text-sm">December 2022 - Present</span>
+                </div>
+                <div class="md:flex-grow">
+                    <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Multi-Objective Fast Evolutionary Algorithm for Vehicle Routing Problem.</h2>
+                    <p class="leading-relaxed pb-2">Built a solution to solve the multi-objective vehicle routing problem, with Distance vs Fuel consumption as two optimisation objective. Came up with 
+                        multiple fast converging mutation operator for dividing workload across trucks, distance optimisation and fuel consumption minimisation, and implemented 
+                        multi-stage EA for implicit parallelism as faster execution time on a single thread. </p>
+                    <p class="leading-relaxed">Evolutionary Algorithms | Machine Learing | Swift x Python | Memetic Algorithms.</p>
+                </div>
+            </div>  
+            
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span class="font-semibold title-font text-gray-700">Quantum Algorithms</span>
+                <span class="mt-1 text-gray-500 text-sm">Spring 2022</span>
+              </div>
+              <div class="md:flex-grow">
+                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Studied Randomised Measurement Toolbox.</h2>
+                <p class="leading-relaxed mb-2">Implemented a protocol for reading a quantum circuit that reduced the number of samples required to approximate it's 
+                    state. This protocol was discussed in <a href="https://arxiv.org/abs/2203.11374"><u>this</u></a> paper.
+                </p>
+                <p class="leading-relaxed"> Quantum Algorithms | Python | OpenFermion | Cirq</p>
+              </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">Modern Game Artificial Intelligence</span>
+                  <span class="text-sm text-gray-500">Spring 2022</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">2D-Search and Replace Algorithm.</h2>
+                  <p class="leading-relaxed pb-2">Implemented a 2-D Procedural Content Generation algorithm that acts like a 2-D grammar. 1-D grammer will be the once 
+                      seen in the popular text editors. Also implemented a city builder in Minecraft.
+                  </p>
+                  <p class="leading-relaxed">Python</p>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">Swift UI</span>
+                  <span class="text-sm text-gray-500">Summer 2022</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Today Productivity.</h2>
+                  <p class="leading-relaxed"> Built an iOS and macOS application to track and encourage myself to work efficiently daily, plan regular and long
+                    term events. It also allows you to drack succes rate of your daily routine and look into past days.
+                  </p>
+                  <p>Swift | SwiftUI | CloudKit | macOS App Development | iOS App Development | WidgetKit</p>
+                  <a href="https://ananta-one-1.github.io/today.github.io/" class="text-blue-500 inline-flex items-center mt-4">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">Embedded Systems</span>
+                  <span class="text-sm text-gray-500">Spring 2023</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Sobel on a chip.</h2>
+                  <p class="leading-relaxed">Implemented sobel edge detection algorithm using static affine programming paradigm, and programmed Xilinx FPGA to 
+                    do it efficiently.
+                  </p>
+                  <p>C | Daedalus Framework</p>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">Robotics</span>
+                  <span class="text-sm text-gray-500">Spring 2022</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">SLAM Problem</h2>
+                  <p class="leading-relaxed"> Implemented algorithm to descriminate between furniture and door using 1-D lidar sensor data and used it to 
+                    navigate a Pi-Car to its destination.
+                  </p>
+                  <p>Python | Coppelia Sim</p>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">Oogway Consulting</span>
+                  <span class="text-sm text-gray-500">2017-2018</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Gilmour Proxy</h2>
+                  <p class="leading-relaxed"> Built a proxy for a micro-service broker system named Gilmour. The broker runs only on Golang and ruby. 
+                    Gilmour proxy makes the broker system accessible for all other languages by using https protocol. This broker can handle thousands of 
+                    micro-services written in different programming languages. Responsibilities include developing and debugging the proxy. Documentation 
+                    using LateX and markdown. Containerisation and monitoring with Docker and Prometheus.
+                  </p>
+                  <p class="leading-relaxed">Golang | Prometheus | Docker</p>
+                </div>
+            </div>
+
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                  <span class="font-semibold title-font text-gray-700">StealthAudio</span>
+                  <span class="text-sm text-gray-500">2017</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Steganography Tool</h2>
+                  <p class="leading-relaxed"> Designed and implemented a steganography system. It takes a string as an input and hides it inside a 
+                    waveform file audio format (*.wav).
+                  </p>
+                  <p class="leading-relaxed">C++ | Qt </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--Education-->
+    <section class="text-gray-600 body-font" id="education">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Education</h1>
+              <div class="h-1 w-20 bg-blue-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Started as a student fascinated in Physics and Mathematics, till Juniour College, then 
+                took up Computer Engineering during bachelors, now studying Foundations of Computing.
+            </p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">MASTERS</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Leiden University, The Netherlands</h2>
+                <p class="leading-relaxed text-base">Studying Foundations of Computing with current GPA of 7.7* expected graduation by Fall 2023.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">BACHELORS</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Savitribai Phule Pune University, India</h2>
+                <p class="leading-relaxed text-base">Graduated Computer Engineering in 2018 with 64% grades.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">JUNIOR COLLEGE</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Center Point School, Nagpur, India</h2>
+                <p class="leading-relaxed text-base">Graduated Physics, Chemistry, Maths branch in 2014 with 86.8%, and #1 in Physics (94%).</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">SCHOOL</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bhartiya Vidya Bhavan, Nagpur, India</h2>
+                <p class="leading-relaxed text-base">Graduated high school in 2012 with 88% grades.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About Me-->
+      <section class="text-gray-600 body-font" id="about">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">About Me</h1>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-lg title-font font-medium text-gray-400 mb-1">LANGUAGE</h2>
+                <p class="leading-relaxed mb-3">
+                    <ul>
+                        <li>Marathi-Native</li>
+                        <li>Hindi-Rudimentary</li>
+                        <li>English-Proficient</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-lg title-font font-medium text-gray-400 mb-1">HOBBIES</h2>
+                <p class="leading-relaxed mb-3">I love Physics and Maths, and regularly enjoy biking. I spent rest of my free time playing Tekken, 
+                    building computers, and going on long walks along the canals.</p>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/3">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h2 class="tracking-widest text-lg title-font font-medium text-gray-400 mb-1">QUOTE</h2>
+                <p class="leading-relaxed mb-3">"Given enough time and effort, one can accomplish anything"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--Contacts-->
+    <section class="text-gray-600 body-font" id="contacts">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Contacts</h1>
+          </div>
+          <div class="flex flex-wrap -m-2">
+            <a href="https://www.linkedin.com/in/ananta-shahane-94270523a/">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                <div class="h-full flex items-center bg-indigo-500 hover:bg-indigo-600 border p-4 rounded-lg">
+                    <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                        <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" width="64px" height="64px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7 c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4 c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8 c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4 c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"></path> <rect x="-8.5" y="348.4" width="49.9" height="159.7"></rect> <path d="M15.4,273c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C45.1,284.9,33.8,273,15.4,273z"></path> <path d="M177.7,346.9c-28.6,0-46.5,15.6-49.8,26.6v-25.1H71.8c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4v82.6H241v-88.8C241,369.9,213.2,346.9,177.7,346.9z"></path> </g> </g></svg>
+                      </div>
+                    <div class="flex-grow">
+                    <h2 class="text-gray-100 title-font font-medium">LinkedIn</h2>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                <a href="mailto:ananta.shahane@aol.com">
+              <div class="h-full flex items-center bg-blue-500 hover:bg-blue-600 border p-4 rounded-lg">
+                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0">
+                    <svg width="64px" height="64px" viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.8 4C1.86451 4 1.0468 4.46923 0.544325 5.16792C0.20074 5.64567 0 6.23499 0 6.86667V17.1333C0 18.682 1.21964 20 2.8 20H10.2C10.7523 20 11.2 19.5523 11.2 19C11.2 18.4477 10.7523 18 10.2 18H2.8C2.39214 18 2 17.6466 2 17.1333V7.94766L7.77948 14.3096C8.96986 15.6199 11.0301 15.6199 12.2205 14.3096L18 7.94766V12.1333C18 12.6856 18.4477 13.1333 19 13.1333C19.5523 13.1333 20 12.6856 20 12.1333V6.86667C20 6.235 19.7993 5.64567 19.4557 5.16792C18.9532 4.46923 18.1355 4 17.2 4H2.8ZM9.25983 12.9647L2.9327 6H17.0673L10.7402 12.9647C10.3434 13.4015 9.65662 13.4015 9.25983 12.9647ZM18.2929 21.2929C17.9024 21.6834 17.9024 22.3166 18.2929 22.7071C18.6834 23.0976 19.3166 23.0976 19.7071 22.7071L22.7071 19.7071C23.0976 19.3166 23.0976 18.6834 22.7071 18.2929L19.7071 15.2929C19.3166 14.9024 18.6834 14.9024 18.2929 15.2929C17.9024 15.6834 17.9024 16.3166 18.2929 16.7071L19.5858 18H15C14.4477 18 14 18.4477 14 19C14 19.5523 14.4477 20 15 20H19.5858L18.2929 21.2929Z" fill="#ffffff"></path> </g></svg>
+                  </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">Mail</h2>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                <a href="https://github.com/Ananta-One-1">
+              <div class="h-full flex items-center bg-gray-600 hover:bg-gray-700 border p-4 rounded-lg">
+                <div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-gray-500 text-white flex-shrink-0">
+                    <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM7.53366 7.08397L7.5316 7.08474C7.26002 7.18609 7.04549 7.40042 6.9441 7.67199C6.93539 7.69534 6.92686 7.71875 6.91854 7.7422C6.65067 8.49667 6.57954 9.31617 6.70595 10.1058C6.71242 10.1462 6.71942 10.1866 6.72693 10.2269C6.69805 10.2732 6.66999 10.3201 6.64278 10.3675C6.21126 11.1187 5.98982 11.9947 6.00036 12.8816C6.00148 14.7829 6.50083 16.1389 7.41451 17.0447C8.30946 17.9319 9.45151 18.2334 10.4004 18.3624L10.4308 18.3664C11.488 18.5237 12.509 18.5147 13.5629 18.3383L13.5643 18.3381C14.517 18.2225 15.6687 17.9357 16.5726 17.0531C17.4961 16.1514 17.9985 14.7917 17.9996 12.8815C18.0102 11.9947 17.7887 11.1187 17.3572 10.3675C17.33 10.32 17.3018 10.2731 17.2729 10.2266C17.2804 10.1864 17.2873 10.1461 17.2938 10.1058C17.4202 9.31256 17.3465 8.48924 17.0735 7.73278C17.0658 7.7113 17.0578 7.68981 17.0497 7.66833C16.948 7.39922 16.7354 7.18692 16.4661 7.08569L16.4649 7.08524L16.4637 7.08479L16.4613 7.08389L16.4564 7.08209L16.4462 7.07845L16.4248 7.07115C16.41 7.06627 16.3942 7.0614 16.3774 7.05664C16.3438 7.04709 16.3062 7.03799 16.2648 7.02999C15.7853 6.93737 14.9893 7.02349 13.8406 7.80507C13.8141 7.82311 13.7874 7.84153 13.7605 7.86033C13.6952 7.8444 13.6298 7.82938 13.5643 7.81524C12.5189 7.58974 11.4451 7.59231 10.4004 7.82295C10.3466 7.83481 10.293 7.84728 10.2394 7.86034C10.2125 7.84154 10.1858 7.82312 10.1592 7.80507C9.00585 7.02077 8.20666 6.93756 7.72867 7.03037C7.68807 7.03825 7.65128 7.04718 7.6183 7.05651C7.60182 7.06117 7.58633 7.06592 7.57182 7.07068L7.55081 7.0778L7.54087 7.08134L7.53604 7.0831L7.53366 7.08397Z" fill="#ffffff"></path> </g></svg>
+                  </div>
+                <div class="flex-grow">
+                  <h2 class="text-gray-100 title-font font-medium">GitHub</h2>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Footer section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+        <p class="text-center">&copy; 2023 Ananta Anil Shahane. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
