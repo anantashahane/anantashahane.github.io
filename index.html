@@ -25,7 +25,7 @@
                 </label></li>
             </ul>
       </div>
-          <div class="hero py-10" id="hero">
+          <div class="hero min-h-screen" id="hero">
               <div class="hero-content text-center">
               <div class="max-w">
                   <div class="avatar">
@@ -121,6 +121,50 @@
               <p>I designed and implemented a sophisticated solution capable of figuring out feature importance of time series. This innovative approach 
                 effectively computes and provides an approximation of the specific weightings assigned to the individual base time series that collectively 
                 contribute to the final time series result.</p>
+                <div class="carousel rounded-box gap-2">
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Question: </div>
+                      <div class="text-neutral-content/90 flex-shrink">You are given a bunch of time series, it can be completely random and not necessarily
+                        sinosuidal waves, and a weighted sum of those time series. How do you solve for the contribution of each of the time series?
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Solution: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> I used an Evolutionary Strategy, that searches for the optimal weightages, and provides 
+                        (close to) optimal solution for the weightages, and it has been proven to return error less than 10<sup>-5</sup> for 40 time series and 
+                        perfect solution for 10 time series.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Optimisations: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> I implemented a solution that modulates the search parameter as a function of the error and 
+                        number of generations since stagnation, giving a really fast and conveerging algorithm, often taking ~400 iterations to find optimal solution
+                        when solving for 10 time series.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Philosophy: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> One can visualise it as a light rain across whole domain of the rough terrain (search 
+                        parameter proportional to error), then eventually it rains heavily in one of the deep trenches (exploiting local minima), and when it
+                        is filled it moves on to other trench (search parameter proportional to stagnation period).
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item items-center px-4">
+                    <div class="btn btn-neutral btn-outline">
+                      <a href="https://github.com/anantashahane/TimeSeriesDecrypter"  target="_blank" rel="noopener noreferrer">
+                        Repository
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">Evolutionary Strategy</div>
                   <div class="badge badge-outline">Normal Distribution</div>
@@ -138,9 +182,55 @@
               <div class="font-mono">A Corridor Model Evolutionary Algorithm for Fast Converging Green Vehicle Routing Problem</div>
             </div>
             <div class="collapse-content"> 
-              <p>I designed and implemented a sophisticated solution capable of figuring out feature importance of time series. This innovative approach 
-                effectively computes and provides an approximation of the specific weightings assigned to the individual base time series that collectively 
-                contribute to the final time series result.</p>
+              <p>Remodelled genetic algorithm for green vehicle routing problem accounting for customers' locality, and engineered corridor model. Reduced 
+                average AUC for 92 benchmarks of 500 iterations by 10%.</p>
+                <div class="carousel rounded-box gap-2">
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Question: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> You have a bunch of customers awaiting to receive their orders, and you are given one 
+                        depot and a few vehicles. Can you find a tradeoff between cheapest-lowest fuel consumption-and shortest path to serve all the customers?
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Solution: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> I used an NSGA-II (Non-Dominant Sorting Genetic Algorithm-II), for selection process, and 
+                        introduced Corridor Model from Evolutionary Strategies, into this Discrete Mathematics problem. 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Result: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> This resulted in an algorithm that is n log(n) times slower in execution, but in return 
+                        converges much faster over the generations, thanks to disciplined repair operators in the mutations. 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Philosphy: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> A random mutation can provide one with optimal solution every once in a while, but 
+                        choosing carefully early in the optimisation period leads to much more consistent convergence to optimal distance, which turns into 
+                        extremely good population for exploration of optimal in other objectives.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item rounded-box max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-neutral-content/90 pb-4 text-footnote"> The research paper is under embargo till June 2024, the repository will be polised and 
+                        provided after that.
+                      </div>
+                      <div class="btn btn-neutral btn-outline btn-disabled">
+                        <a>
+                          Repository
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">NSGA-II</div>
                   <div class="badge badge-outline">Evolutionary Algorithms</div>
@@ -160,6 +250,48 @@
             <div class="collapse-content"> 
               <p>Designed genetic algorithm for searching Deep Learning Architecture for image detection; revealed the link between adjacency matrices and 
                 the crossover operator, which improved both convergence speed and stability of the algorithm.</p>
+                <div class="carousel rounded-box gap-2">
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Question: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> Say you want to perform image detection using deep learning architecture, but there 
+                        is no know architecture that is discovered to do so; how does one find the desired DL architecture? 
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Solution: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> I designed a Genetic Algorithm, that explores various architecture, and is quickly 
+                        able to converge to an architecture that can perform image detection with 95.05% accuracy.  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Optimisation: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> I discovered a link between the n-point crossover with n-layer architecture, that 
+                        would significantly improve the performance of the GA in finding the DL Architecture more consistently and more quickly.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Philosphy: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> A n-point crossover is more likely to share optimal layer found by random mutation 
+                        than any other crossover, as it is less likely to break a parents' layer into multiple parts, preserving the better performing 
+                        layers, and  potentially introducing newer better layers, improving performance.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item items-center px-4">
+                    <div class="btn btn-neutral btn-outline">
+                      <a href="https://github.com/anantashahane/EvolutionaryIntelligence"  target="_blank" rel="noopener noreferrer">
+                        Repository
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">Genetic Algorithm</div>
                   <div class="badge badge-outline">Deep Learning</div>
@@ -178,6 +310,36 @@
             <div class="collapse-content"> 
               <p>Programmed Xilinx FPGA using the Daedalus Framework to execute edge detection using static affine programming paradigm. Used only 66% of 
                 the instructed channels in KPN, earning recognition as the top performing software among peers of about 3.75 FPS.</p>
+                <div class="carousel rounded-box gap-2">
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Question: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> Given a Xilinx FPGA, the goal was to program it to be able to do sobel (edge detection)
+                        at as high frame rate as possible.
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-3xl">Process: </div>
+                      <div class="text-neutral-content/90 flex-shrink"> The expected performance was 2.8-3.5 FPS, but my algorithm provided 3.75 FPS, earning the 
+                        recognition.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item max-w-md">
+                    <div class="flex flex-col bg-neutral rounded-box p-4 text-neutral-content">
+                      <div class="text-neutral-content/90 flex-shrink"> The repostory is not available, due the data being on server, which was not 
+                        downloaded.
+                      </div>
+                      <div class="btn btn-neutral btn-outline btn-disabled">
+                        <a>
+                          Repository
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">C</div>
                   <div class="badge badge-outline">Deadalus Framework</div>
@@ -194,7 +356,7 @@
             <div class="collapse-content"> 
               <p>I researched classical shadows in quantum computing and implemented a randomized measurement toolkit, validated its performance, and 
                 utilized it to efficiently evaluate the matrix of underlying quantum circuits. This work, detailed in the research paper 
-                <a href="https://arxiv.org/abs/2203.11374"><u>here</u></a>, contributed to reducing the number of required samples for accurate quantum 
+                <a href="https://arxiv.org/abs/2203.11374" target="_blank" rel="noopener noreferrer"><u>here</u></a>, contributed to reducing the number of required samples for accurate quantum 
                 circuit analysis.</p>  
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">Quantum Algorithms</div>
@@ -213,10 +375,16 @@
               <div class="font-mono">2-D Search and Replace Algorithm & Minecraft City Builder</div>
             </div>
             <div class="collapse-content"> 
-              <p>I researched classical shadows in quantum computing and implemented a randomized measurement toolkit, validated its performance, and 
-                utilized it to efficiently evaluate the matrix of underlying quantum circuits. This work, detailed in the research paper 
-                <a href="https://arxiv.org/abs/2203.11374"><u>here</u></a>, contributed to reducing the number of required samples for accurate quantum 
-                circuit analysis.</p>  
+              <p>In Modern Game Artificial Intelligence Applications, I worked on building a 2-D Search and Replace Algorithm, that is an iteration on the 
+                procedural content generation allowing one to build 2-D map step by step. I was also involved in building a home using PSG in a minecraft map</p>  
+                <div class="carousel gap-4 p-4">
+                  <div class="text-large p-2 rounded-full shadow-lg carousel-item bg-neutral">
+                    <a href="./src/report_A3_Lulof_Ananta.pdf"  target="_blank" rel="noopener noreferrer">Report on 2-D Search and Replace</a>
+                  </div>
+                  <div class="text-large p-2 rounded-full shadow-lg carousel-item bg-neutral">
+                    <a href="./src/MGAIA_1.pdf"  target="_blank" rel="noopener noreferrer">Minecraft Procedural Content Generation</a>
+                  </div>
+                </div>
                 <div class="flex flex-wrap gap-2 p-2">
                   <div class="badge badge-outline">Python</div>
                   <div class="badge badge-outline">gdmc</div>
