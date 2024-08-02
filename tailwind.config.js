@@ -2,9 +2,28 @@
 module.exports = {
   content: ["./src/*/*.js", "./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundClip: {
+      'text': 'text',
+      }
+    },
   },
-  plugins: [require("daisyui")],
+  variants: {
+    backgroundClip: ['responsive'],
+  },
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.bg-clip-text': {
+          '-webkit-background-clip': 'text',
+          'background-clip': 'text',
+        },
+        '.text-transparent': {
+          'color': 'transparent',
+        }
+      }, ['responsive', 'hover'])
+    },
+    require("daisyui")],
   daisyui: {
     themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "forest", // name of one of the included themes for dark mode

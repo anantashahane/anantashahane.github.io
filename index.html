@@ -26,9 +26,9 @@
             </ul>
       </div>
           <div class="hero min-h-screen relative" id="hero"style="background-image: url(Images/IMG_1310.jpeg);"\>
-              <div class="hero-content text-center bottom-0 absolute backdrop-blur-md rounded-t-2xl bg-base-200 bg-opacity-10 flex-col w-full">
-                  <h1 class="text-5xl font-bold mix-blend-color-dodge text-neutral-content bg-clip-text drop-shadow">Ananta Anil Shahane</h1>
-                  <p class="text-neutral-content mix-blend-color-dodge">A recent masters graduate from Universiteit Leiden, with wide range of experiences 
+              <div class="hero-content text-center bottom-0 absolute backdrop-blur-md mix-blend-multiply rounded-t-2xl bg-black flex-col w-full">
+                  <h1 class="text-5xl font-bold text-blue-200 bg-clip-text drop-shadow">Ananta Anil Shahane</h1>
+                  <p class="text-neutral-content">A recent masters graduate from Universiteit Leiden, with wide range of experiences 
                     actively seeking for opportunities.
                   </p>
                   <button class="badge badge-outline drop-shadow text-teal-200 blur-5">• Actively Searching for Opportunities.</button>
@@ -55,8 +55,9 @@
                     <time class="font-mono italic">2021-2023</time>
                     <div class="text-lg font-black">Universiteit Leiden, Master of Science</div>
                     <div class="text-base-content"><b>Major:</b> Foundations of Computing.</div>
-                    <div class="text-base-content"><b>Thesis:</b>  A Corridor Model Evolutionary Algorithm, for Fast Converging Green Vehicle Routing Problem (8.5 GPA).</div>
+                    <div class="text-base-content"><b>Thesis:</b>  A Corridor Model Evolutionary Algorithm, for Fast Converging Green Vehicle Routing Problem.</div>
                     <div><b>Grade:</b>7.5</div>
+                    <div class="btn btn-sm btn-accent" onclick="openWebsite()">Read Thesis</div>
                     <button class="btn btn-accent btn-sm btn-outline" onclick="my_modal_2.showModal()">Courses</button>
                     <dialog id="my_modal_2" class="modal">
                       <div class="modal-box text-start">
@@ -211,12 +212,13 @@
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="carousel-item rounded-box w-full">
+                  <div class="carousel-item rounded-box w-full gap-5">
                     <div class="btn btn-accent-content btn-outline">
                       <a href="https://github.com/anantashahane/A-Fast-Converging-Evolutionary-Algorithm-for-Green-Vehicle-Routing-Problem"  target="_blank" rel="noopener noreferrer">
                         Repository
                       </a>
                     </div>
+                    <div class="btn btn-outline btn-accent-vontent" onclick="openWebsite()">Read Thesis</div>
                   </div>
                 </div>
                 <div class="flex flex-wrap gap-2 p-2">
@@ -681,5 +683,10 @@
           </ul>
         </div>
       </div>
+      <script>
+        function openWebsite() {
+          window.open("https://dl.acm.org/doi/10.1145/3638530.3654323")
+        }
+      </script>
 </body>
 </html>
