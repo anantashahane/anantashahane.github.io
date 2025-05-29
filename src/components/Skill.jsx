@@ -17,7 +17,7 @@ const Skill = ({
     )
 }
 
-Skill.PropTypes = {
+Skill.propTypes = {
     logo : PropTypes.string.isRequired,
     skillName : PropTypes.string.isRequired,
     color1 : PropTypes.string.isRequired,

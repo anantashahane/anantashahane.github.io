@@ -29,9 +29,13 @@ const ProjectCard = ({
     };
 
     const descriptionRender = () => {
-        return description.split('\n').map((line, _) => (
+        return (
+        <ul>
+        {description.split('\n').map((line, _) => (
         <li>{line}</li>
-        ));
+        ))}
+        </ul>
+        );
     };
 
     return (

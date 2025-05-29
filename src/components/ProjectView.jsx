@@ -8,17 +8,17 @@ const ProjectView = () => {
 
     const jobItems = [
         {
-            imgLink: "/images/gvrp.png",
+            imgLink: "/Images/gvrp.png",
             title: "A Corridor Model Evolutionary Algorithm for Fast Converging Green Vehicle Routing Problem",
             subtitle: "LIACS, with Yingie Fan and Niki van Stein.",
             date: "Dec 2022-Aug 2024",
             description:"Developed a geometric heuristic to introduce the Corridor Model to Vehicle Routing Problem. \nAchieved 10% faster convergence and reducing hyperparameters from 10-12 to just 2-3. \nDesigned a novel initializer that outperformed K-means clustering by 30% efficiently. \nResearch published in the ACM Journal (GECCO 2024, Melbourne, Australia).",
             tags: ["Evolutionary Algorithms", "Swift", "Python", "OOP", "pyMOO", "NSGA-II", "manim"],
             links: [["https://github.com/anantashahane/A-Fast-Converging-Evolutionary-Algorithm-for-Green-Vehicle-Routing-Problem", "Repository", "_blank"],
-            ["https://dl.acm.org/doi/10.1145/3638530.3654323", "Publication", "_blank"], ["/images/Master Thesis GECCO 2024-AI Voice Over.mp4", "Manim Video", "_blank"]]
+            ["https://dl.acm.org/doi/10.1145/3638530.3654323", "Publication", "_blank"], ["/Images/Master Thesis GECCO 2024-AI Voice Over.mp4", "Manim Video", "_blank"]]
         },
         {
-            imgLink: "/images/feature-importance.tiff",
+            imgLink: "/Images/feature-importance.tiff",
             title: "Evolutionary Feature Importance Algorithm",
             subtitle: "Hobby Project.",
             date: "October 2023",
@@ -27,7 +27,7 @@ const ProjectView = () => {
             links: [["https://github.com/anantashahane/TimeSeriesDecrypter", "Repository", "_blank"]]
         },
         {
-            imgLink: "/images/edge-detection.jpg",
+            imgLink: "/Images/edge-detection.jpg",
             title: "Embedded Edge Detection",
             subtitle: "LIACS, with Dr. T.P. Setfanov.",
             date: "Jan 2023-Sept 2023",
@@ -35,7 +35,7 @@ const ProjectView = () => {
             tags: ["Sobel", "C", "Daedalus Framework", "FPGA Programming"]
         },
         {
-            imgLink: "/images/GA-for-NN.jpg",
+            imgLink: "/Images/GA-for-NN.jpg",
             title: "Genetic Algorithms for Neural Network Architecture Search",
             subtitle: "LIACS, with Dr. Hao Wang.",
             date: "Sept 2022-Dec 2022",
@@ -44,15 +44,16 @@ const ProjectView = () => {
             links: [["https://github.com/anantashahane/EvolutionaryIntelligence/tree/main", "Repository", "_blank"]]
         },
         {
-            imgLink: "/images/Robotics.jpg",
+            imgLink: "/Images/Robotics.jpg",
             title: "Robotics Perception Box",
             subtitle: "LIACS, with Dr. E.M.Bakker.",
             date: "Sept 2022-Dec 2022",
             description:"Developed a Temporal K-Nearest Neighbors algorithm to distinguish walls from furniture using LiDAR data.\nOptimized CPU utilization, enabling faster processing and precise actuation of the robot motors.",
-            tags: ["Python", "Machine Learning", "CoppeliaSim", "Triganometry"]
+            tags: ["Python", "Machine Learning", "CoppeliaSim", "Triganometry"],
+            links: [["https://youtu.be/Szi3SpKTN60", "Video", "_blank"]]
         },
         {
-            imgLink: "/images/Gaming.jpg",
+            imgLink: "/Images/Gaming.jpg",
             title: "2-D Search and Replace Algorithm and Minecraft Builder",
             subtitle: "LIACS, with Dr. Mike Preuss \& Piere Lulof",
             date: "Jan 2022-Mar 2022",
@@ -62,7 +63,7 @@ const ProjectView = () => {
                     ["/MGAIA_1.pdf", "Minecraft HTTP", "_blank"]]
         },
         {
-            imgLink: "/images/Quantum.jpg",
+            imgLink: "/Images/Quantum.jpg",
             title: "Quantum Algorithm: Randomised Measurement Toolbox, and Classical Shadows",
             subtitle: "LIACS, with Dr. Vedran Dunjko",
             date: "Jan 2022-Mar 2022",
@@ -71,7 +72,7 @@ const ProjectView = () => {
             links: [["https://arxiv.org/abs/2203.11374", "Studied Paper", "_blank"]]
         },
         {
-            imgLink: "/images/today-prod.png",
+            imgLink: "/Images/today-prod.png",
             title: "Apple Platforms Development",
             subtitle: "Freelance.",
             date: "2018-2022",
@@ -81,7 +82,7 @@ const ProjectView = () => {
             links: [["https://anantashahane.github.io/todayapp/", "Landing Page", "_blank"]]
         },
         {
-            imgLink: "/images/Gilmour.jpg",
+            imgLink: "/Images/Gilmour.jpg",
             title: "GilmourProxy",
             subtitle: "Internship@Oogway Consulting",
             date: "2017-2018",
@@ -91,7 +92,7 @@ const ProjectView = () => {
             links: [["https://github.com/gauravsitlani/new-gilmour-proxy", "Repository", "_blank"]]
         },
         {
-            imgLink: "/images/StealthAudio.jpg",
+            imgLink: "/Images/StealthAudio.jpg",
             title: "StealthAudio, Audio Steganography",
             subtitle: "Project@Pune University",
             date: "2017",
@@ -123,9 +124,9 @@ const ProjectView = () => {
                   clipRule="evenodd" />
               </svg>
             </div>
-            <div className={"reveal-up " + (index % 2 == 0 ? "timeline-start" : "timeline-end")}>
+            <div className={"reveal-up " + (index % 2 == 0 ? "timeline-start" : "timeline-end")} key={index}>
                 <time className={index % 2 == 0 ? "font-mono italic md:text-right" : "font-mono italic"}>{date}</time>
-                <ProjectCard imgLink={imgLink} title={title} subtitle={subtitle} description={description} tags={tags} links={links} key={index}/>
+                <ProjectCard imgLink={imgLink} title={title} subtitle={subtitle} description={description} tags={tags} links={links}/>
             </div>
             {index == jobItems.length - 1 ? <hr className="hidden" /> : <hr className="bg-teal-400"/>}
           </li>

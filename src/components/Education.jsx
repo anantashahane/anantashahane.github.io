@@ -23,7 +23,7 @@ const Education = () => {
                 </div>
                 <div className="timeline-start mb-10 md:text-end reveal-up">
                   <time className="font-mono italic">2021-2023</time>
-                  <EducationCard imgLink={"/images/masters.png"} title={"Foundations of Computing"} subtitle={"Universiteit Leiden (MSc.)"} body={"Quantum Algorithms, Modern Game AI, Introduction to Machine Learning, Evolutionary Algorithms, Embedded Systems, Combinatorial Algorithms, Introduction to Deep Learning, Multimedia Systems, Software Testing & Verification, Robotics, Computational Models and Semantics."} accomplishment={"Published Research Paper."} score={"Grade: 7.5/10"}/>
+                  <EducationCard imgLink={"/Images/masters.png"} title={"Foundations of Computing"} subtitle={"Universiteit Leiden (MSc.)"} body={"Quantum Algorithms, Modern Game AI, Introduction to Machine Learning, Evolutionary Algorithms, Embedded Systems, Combinatorial Algorithms, Introduction to Deep Learning, Multimedia Systems, Software Testing & Verification, Robotics, Computational Models and Semantics."} accomplishment={"Published Research Paper."} score={"Grade: 7.5/10"}/>
                   </div>
                 <hr className="bg-gradient-to-b from-zinc-200 to-zinc-600"/>
               </li>
@@ -43,7 +43,7 @@ const Education = () => {
                 </div>
                 <div className="timeline-end reveal-up">
                     <time className="font-mono italic">2014-2018</time>
-                    <EducationCard imgLink={"/images/bachelors.png"} title={"Computer Engineering"} subtitle={"Computer Engineering (B.E.)"} body={"Object Oriented Programming, Microprocessor Architecture, Operating Systems and Administration, Data Structure and Problem Solving, Computer Graphics, Digital Signal Processing, Software Engineering, Digital Communication and Wireless Sensor Network, Embedded Operating Systems."} score={"Grade: 64%"}/>
+                    <EducationCard imgLink={"/Images/bachelors.png"} title={"Computer Engineering"} subtitle={"Computer Engineering (B.E.)"} body={"Object Oriented Programming, Microprocessor Architecture, Operating Systems and Administration, Data Structure and Problem Solving, Computer Graphics, Digital Signal Processing, Software Engineering, Digital Communication and Wireless Sensor Network, Embedded Operating Systems."} score={"Grade: 64%"}/>
                 </div>
               </li>
             </ul>

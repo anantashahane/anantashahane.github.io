@@ -168,14 +168,14 @@ const MiscelleneousView = () => {
     return (
         <section id="misc">
             <Title label="Miscelleneous"/>
-            <div className="container">
+            <div className="mx-auto container">
                 <div className="stickycard bg-green-600 top-20 text-zinc-100  items-center rounded-xl">
                     <div className="flex flex-col justify-center p-2 text-xl items-center font-bold">
                         <div className="text-3xl">HackerRank</div>
                         <div className="flex flex-col">
                             {
-                                hackerRank.map(({skill, level}, _) => (
-                                    <div className="bg-green-700/20 border items-center rounded-xl text-slate flex flex-row gap-2 m-2 p-4">
+                                hackerRank.map(({skill, level}, index) => (
+                                    <div className="bg-green-700/20 border items-center rounded-xl text-slate flex flex-row gap-2 m-2 p-4" key={"Hackerrank"+index}>
                                         <div className="text-lg">{level}</div>
                                         <span className="material-symbols-rounded">star</span>
                                         <div className="m-2"/>
@@ -185,20 +185,21 @@ const MiscelleneousView = () => {
                             }
                         </div>
                         <button className="flex flex-row items-center gap-2 text-3xl border p-2 rounded-full hover:bg-slate-300 hover:text-green-600" onClick={handleClick}>
-                            <img src="images/hackerrank.svg" alt="" className="w-12 h12" />
+                            <img src="Images/hackerrank.svg" alt="" className="w-12 h12" />
                             <span><ul>Profile</ul></span>
                         </button>
                     </div>
                 </div>
+
                 <div className="stickycard bg-slate-800 top-[6rem] text-zinc-100 rounded-xl md:mx-1">
                     <div className="flex flex-col items-center py-2 mx-2">
                         <div className="text-3xl font-bold font-mono">Conferences</div>
-                        <div class="overflow-x-scroll mt-4 w-full">
-                            <table class="table table-sm md:table-md table-pin-rows">
+                        <div className="overflow-x-scroll mt-4 w-full">
+                            <table className="table table-sm md:table-md table-pin-rows">
                                 {conferences.map(({region, regionalConferences}, index) => (
                                     <React.Fragment key={index}>
                                         <thead>
-                                            <tr className="bg-slate-600 text-slate-200">
+                                            <tr className="bg-slate-600 text-slate-200" key={"Region"+index}>
                                                 <th></th>
                                                 <th>{region}</th>
                                                 <th></th>
@@ -206,7 +207,7 @@ const MiscelleneousView = () => {
                                         </thead>
                                         <tbody>
                                             {regionalConferences.map(({conference, location, date}, index2) => (
-                                                <tr key={index2}>
+                                                <tr key={"Conference"+index2}>
                                                     <td>{date}</td>
                                                     <td>{conference}</td>
                                                     <td>{location}</td>
@@ -216,16 +217,15 @@ const MiscelleneousView = () => {
                                     </React.Fragment>
                                 ))}
                             </table>
-                            
                             </div>
-  
                     </div>
                 </div>
+
                 <div className="stickycard bg-blue-600 top-[7rem] text-zinc-100 rounded-xl md:mx-3">
                     <div className="flex flex-col items-center">
                         <div className="text-3xl font-bold pt-2">Certificates</div>
                         {certificates.map(({achievementName, date, provider, description}, index) => (
-                            <div className="flex flex-col w-full px-4 pb-2">
+                            <div className="flex flex-col w-full px-4 pb-2" key={"Achievement"+index}>
                                 <div className="flex flex-row pt-4">
                                     <div className="text-sm font-bold md:text-base">{provider}</div>
                                     <div className="flex-grow"></div>
@@ -238,11 +238,12 @@ const MiscelleneousView = () => {
                         )}
                     </div>
                 </div>
+
                 <div className="stickycard bg-indigo-600 top-[8rem] text-zinc-100 rounded-xl md:mx-5">
                     <div className="flex flex-col items-center">
                         <div className="text-3xl font-bold pt-2">Awards</div>
                         {awards.map(({achievementName, date, provider, description}, index) => (
-                            <div className="flex flex-col w-full px-4 pb-2">
+                            <div className="flex flex-col w-full px-4 pb-2" key={"Award"+index}>
                                 <div className="flex flex-row pt-4">
                                     <div className="text-sm font-bold md:text-base">{provider}</div>
                                     <div className="flex-grow"></div>
@@ -255,12 +256,13 @@ const MiscelleneousView = () => {
                         )}
                     </div>
                 </div>
+
                 <div className="stickycard bg-zinc-800 top-[9rem] text-zinc-100 rounded-xl md:mx-7">
                     <div className="flex flex-col p-2">
                         <div className="flex text-3xl items-center justify-center font-semibold">Verbal and Quant </div>
                         <div className="bg-zinc-700 rounded-lg">
-                        { aptitude.map(({test, score}) => (
-                            <div className="flex text-xs md:text-base flex-row font-mono p-2">
+                        { aptitude.map(({test, score}, index) => (
+                            <div className="flex text-xs md:text-base flex-row font-mono p-2" key={"Aptitude"+index}>
                                 <span className="justify-start">{test}</span>
                                 <span className="flex-grow"></span>
                                 <span className="justify-end">{score}</span>
@@ -287,8 +289,8 @@ const MiscelleneousView = () => {
                         <div className="flex flex-col gap-2">
                             <ul className="font-mono items-center px-2 md:px-4 text-xs md:text-base">
                             {
-                                activities.map(({value}, _) => (
-                                    <li>{value}</li>
+                                activities.map(({value}, index) => (
+                                    <li key={"activities"+index}>{value}</li>
                                 ))
                             }
                             </ul>
